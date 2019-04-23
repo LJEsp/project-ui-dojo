@@ -1,25 +1,17 @@
 import React from "react";
-import styled from "styled-components";
+import "destyle.css";
 
 import SEO from "../components/seo";
 import Layout from "../components/layout";
-import Image from "../components/image";
 
-const ImgWrapper = styled.div`
-  max-width: 300px;
-  margin-bottom: 1.45rem;
-`;
+import GlobalStyle from "../theme/GlobalStyle";
+import theme from "../theme/theme";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <GlobalStyle theme={theme}/>
 
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <ImgWrapper>
-      <Image />
-    </ImgWrapper>
   </Layout>
 );
 

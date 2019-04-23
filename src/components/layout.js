@@ -2,18 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-
 import styled from "styled-components";
 
-import Header from "./header";
-import { GlobalStyle } from "../theme/globalStyle";
-
-const ContentWrapper = styled.div`
-  margin: 0 auto;
-  maxwidth: 960;
-  padding: 0px 1.0875rem 1.45rem;
-  paddingtop: 0;
-`;
+const ContentWrapper = styled.div``;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,7 +19,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <GlobalStyle />
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -38,7 +28,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+
         <ContentWrapper>{children}</ContentWrapper>
       </>
     )}
