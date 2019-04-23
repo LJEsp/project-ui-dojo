@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": ">",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1",
     "babel-plugin-styled-components": "^1.10.0",
     "destyle.css": "^1.0.5",
     "gatsby": "^2.3.25",
