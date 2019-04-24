@@ -24,6 +24,8 @@ const StyledMain = styled.div`
   .main-scroll {
     overflow-y: auto;
     padding-top: var(--size-m);
+    display: flex;
+    justify-content: center;
   }
 
   .main-theme-switcher {
@@ -44,10 +46,8 @@ const StyledMain = styled.div`
 const StyledHeader = styled(Header)``;
 
 const StyledInnerWidth = styled(InnerWidth)`
-  margin: 0 auto;
-
   display: grid;
-  grid-template-columns: ${p => p.theme.increment(9)} 1fr ${p =>
+  grid-template-columns: ${p => p.theme.increment(9)} auto ${p =>
       p.theme.increment(14)};
   grid-column-gap: var(--size-m);
 

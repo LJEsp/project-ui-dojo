@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const InnerWidth = styled.div`
-  width: 62%;
+  width: 70%;
 
   @media (max-width: ${p => p.theme.breakpoint.desktopL}) {
     width: 100%;
