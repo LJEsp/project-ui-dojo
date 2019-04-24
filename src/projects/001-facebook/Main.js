@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 
-import { Button } from "./components/elements";
 import { Header, VerticalMenu } from "./components/layout";
 import { InnerWidth } from "./components/helpers";
 import {

@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+import "destyle.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
