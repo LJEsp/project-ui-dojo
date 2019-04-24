@@ -32,6 +32,10 @@ const StyledCard = styled(Card)`
     padding-bottom: var(--size-s);
     border-bottom: 1px solid ${p => p.theme.color.grey.light};
   }
+
+  .post-ellipsis {
+    color: ${p => p.theme.color.dark};
+  }
 `;
 
 const StyledPost = styled.div``;
@@ -45,7 +49,7 @@ const Post = props => {
         <div className="post-header">
           <PostUser authorImage={authorImage} authorName={authorName} />
 
-          <ButtonIcon icon="fas fa-ellipsis-h" alt="Post options" />
+          <ButtonIcon icon="fas fa-ellipsis-h" alt="Post options" className="post-ellipsis" />
         </div>
 
         <Typography variant="body" margin="stack-s">

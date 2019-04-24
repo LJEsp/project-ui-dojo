@@ -1,6 +1,4 @@
 import React from "react";
-import "destyle.css";
-import "@fortawesome/fontawesome-free/css/all.css";
 import { Link } from "gatsby";
 
 import SEO from "../components/seo";
