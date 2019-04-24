@@ -12,6 +12,10 @@ const StyledCard = styled(Card)`
     margin-bottom: var(--size-m);
     border-bottom: 1px solid ${p => p.theme.color.grey.light};
     padding-bottom: var(--size-m);
+
+    & > *:first-child {
+      flex-shrink: 0;
+    }
   }
 
   .createPost-row-buttons {

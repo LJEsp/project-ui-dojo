@@ -9,7 +9,7 @@ const theme = {
     desktopXXL: "125rem" // 2000px
   },
   font: {
-    sansSerif: "Montserrat, sans-serif",
+    sansSerif: "Open Sans, sans-serif",
     scale: {
       small: "0.875em", // 14px
       base: "1em", // 16px
@@ -25,6 +25,7 @@ const theme = {
     primary: {
       light: "#9FA8DA",
       main: "#3F51B5",
+      mainFixed: "#3F51B5",
       dark: "#303F9F"
     },
     secondary: {},

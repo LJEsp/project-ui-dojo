@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 
+import { Button } from "./components/elements";
 import { Header, VerticalMenu } from "./components/layout";
 import { InnerWidth } from "./components/helpers";
 import {
@@ -11,7 +12,8 @@ import {
 } from "./components/compositions";
 
 import GlobalStyle from "./theme/GlobalStyle";
-import theme from "./theme/theme";
+import themeLight from "./theme/themeLight";
+import themeDark from "./theme/themeDark";
 
 const StyledMain = styled.div`
   height: 100%;
@@ -22,6 +24,20 @@ const StyledMain = styled.div`
   .main-scroll {
     overflow-y: auto;
     padding-top: var(--size-m);
+  }
+
+  .main-theme-switcher {
+    position: fixed;
+    bottom: var(--size-xl);
+    right: var(--size-xl);
+
+    & > button {
+      background-color: ${p => p.theme.color.dark};
+      color: ${p => p.theme.color.light};
+      border-radius: var(--size-s);
+      padding: var(--size-l);
+      box-shadow: ${p => p.theme.shadow[2]};
+    }
   }
 `;
 
@@ -54,8 +70,14 @@ const StyledVerticalMenu = styled(VerticalMenu)`
 `;
 
 const Main = () => {
+  const [theme, setTheme] = useState("light");
+
+  function handleThemeSwitch() {
+    setTheme(theme === "light" ? "dark" : "light");
+  }
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme === "light" ? themeLight : themeDark}>
       <StyledMain>
         <GlobalStyle />
 
@@ -93,6 +115,10 @@ const Main = () => {
               <Sponsored />
             </div>
           </StyledInnerWidth>
+        </div>
+
+        <div className="main-theme-switcher">
+          <button onClick={handleThemeSwitch}>Toggle Light/Dark</button>
         </div>
       </StyledMain>
     </ThemeProvider>

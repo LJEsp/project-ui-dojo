@@ -5,8 +5,7 @@ const TextArea = styled.textarea`
   height: 100%;
   background-color: ${p => p.theme.color.white};
   border-radius: var(--size-s);
-  /* border: 1px solid red; */
-  /* padding: var(--size-s); */
+  color: ${p => p.theme.color.dark};
   resize: none;
   font-size: ${p => p.theme.font.scale.body};
 `;

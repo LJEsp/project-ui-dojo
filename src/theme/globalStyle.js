@@ -3,7 +3,6 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-
   ${"" /* CSS variables for sizing (and spacing) */}
   :root {
     --size-base: ${p => p.theme.size.base};

@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
   ${"" /* CSS variables for sizing (and spacing) */}
   :root {

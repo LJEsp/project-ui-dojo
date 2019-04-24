@@ -14,7 +14,7 @@ const theme = {
       small: "0.875em", // 14px
       base: "1em", // 16px
       body: "1.1875em", // 19px
-      display4: "1.1875em", // 24px
+      display4: "1.1875em", // 19px
       display3: "1.5em", // 24px
       display2: "2em", // 32px
       display1: "3em" // 48px
@@ -22,17 +22,44 @@ const theme = {
     lineHeight: 1.5
   },
   color: {
-    primary: {},
+    primary: {
+      light: "#9FA8DA",
+      main: "#9FA8DA",
+      mainFixed: "#3F51B5",
+      dark: "#303F9F"
+    },
     secondary: {},
-    light: "#FAFAFA",
+    light: "#212121",
     lightFixed: "#FAFAFA",
-    dark: "#212121",
-    white: "#FFFFFF",
-    black: "#000000",
+    dark: "#E0E0E0",
+    white: "#000000",
+    black: "#FFFFFF",
     grey: {
-      light: "#F5F5F5",
-      medium: "#9E9E9E",
+      light: "#424242",
+      lightHover: "#EEEEEE",
+      medium: "#EEEEEE",
       dark: "#424242"
+    },
+    palette: {
+      red: "#F44336",
+      pink: "#E91E63",
+      purple: "#9C27B0",
+      deepPurple: "#673AB7",
+      indigo: "#3F51B5",
+      blue: "#2196F3",
+      lightBlue: "#03A9F4",
+      cyan: "#00BCD4",
+      teal: "#009688",
+      green: "#4CAF50",
+      lightGreen: "#8BC34A",
+      lime: "#CDDC39",
+      yellow: "#FFEB3B",
+      amber: "#FFC107",
+      orange: "#FF9800",
+      deepOrange: "#F4511E",
+      brown: "#795548",
+      grey: "#9E9E9E",
+      blueGray: "#607D8B"
     }
   },
   size: {
@@ -53,7 +80,7 @@ const theme = {
     "0 1.1875em 2.375em rgba(0,0,0,0.30), 0 0.9375em 0.75em rgba(0,0,0,0.16)"
   ],
   increment: increment => `calc(${increment} * var(--size-base))`,
-  incrementFixed: increment => `calc(${increment} * var(--size-base-fixed))`,
+  incrementFixed: increment => `calc(${increment} * var(--size-base-fixed))`
 };
 
 export default theme;

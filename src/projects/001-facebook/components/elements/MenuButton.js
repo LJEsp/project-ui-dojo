@@ -27,12 +27,12 @@ const variants = css`
       width: unset;
       padding: var(--size-s) var(--size-m);
       border-radius: 1000rem;
-      background-color: ${p => p.theme.color.grey.light};
+      background-color: ${p => p.theme.color.light};
       font-weight: 600;
-      color: ${p => p.theme.color.grey.dark};
+      color: ${p => p.theme.color.dark};
 
       &:hover {
-        background-color: ${p => p.theme.color.grey.lightHover};
+        background-color: ${p => p.theme.color.grey.light};
       }
     `}
 `;
@@ -48,6 +48,7 @@ const StyledMenuButton = styled.button.attrs(({ iconColor }) => ({
   font-size: ${p => p.theme.font.scale.small};
   border-radius: var(--size-xs);
   text-align: left;
+  color: ${p => p.theme.color.dark};
 
   &:hover {
     background-color: ${p => p.theme.color.grey.light};

@@ -7,8 +7,8 @@ import { InnerWidth } from "../helpers";
 const StyledHeader = styled.header`
   width: 100%;
 
-  background-color: ${p => p.theme.color.primary.main};
-  color: ${p => p.theme.color.light};
+  background-color: ${p => p.theme.color.primary.mainFixed};
+  color: ${p => p.theme.color.lightFixed};
 
   display: flex;
   justify-content: center;

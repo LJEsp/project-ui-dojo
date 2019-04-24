@@ -19,17 +19,9 @@ const Wrapper = styled.div`
     border-radius: 0 var(--size-xs) var(--size-xs) 0;
 
     &:hover {
-      background-color: ${p => p.theme.color.primary.light};
+      background-color: ${p => p.theme.color.grey.lightHover};
     }
   }
-
-  /* .searchBox-icon {
-    position: absolute;
-    right: var(--size-s);
-    top: 50%;
-    transform: translateY(-50%);
-    color: ${p => p.theme.color.primary.main};
-  } */
 `;
 
 const StyledSearchBox = styled.input.attrs(() => ({
@@ -52,10 +44,6 @@ const SearchBox = props => {
       <button className="searchBox-button">
         <Icon icon="fas fa-search" />
       </button>
-
-      {/* <div className="searchBox-icon">
-        <Icon icon="fas fa-search" />
-      </div> */}
     </Wrapper>
   );
 };

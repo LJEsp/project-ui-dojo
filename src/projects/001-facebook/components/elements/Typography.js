@@ -55,6 +55,7 @@ const StyledTypography = styled.span`
 
   font-size: ${p => p.theme.font.scale.base};
   display: block;
+  color: ${p => p.theme.color.dark};
 
   ${variants};
 
