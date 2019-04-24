@@ -18,7 +18,6 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: ${p => p.theme.breakpoint.tabletPortrait}) {
       --size-base: calc(${p => p.theme.size.base} / 1.5);
-      --size-xs: calc(${p => p.theme.size.xs} / 1.5);
       --size-s: calc(${p => p.theme.size.s} / 1.5);
       --size-m: calc(${p => p.theme.size.m} / 1.5);
       --size-l: calc(${p => p.theme.size.l} / 1.5);
@@ -28,6 +27,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }  
 
+  html, body, #___gatsby, #___gatsby > div {
+     height: 100%;
+  }
+
+
   html {
     scroll-behavior: smooth;
     font-size: 16px;
@@ -36,9 +40,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${p => p.theme.font.sansSerif};
     font-size: 16px;
-  }
-
-  #root {
   }
 
   #hidden {

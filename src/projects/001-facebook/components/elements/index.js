@@ -1,6 +1,9 @@
 export { default as Avatar } from "./Avatar";
 export { default as Button } from "./Button";
 export { default as ButtonIcon } from "./ButtonIcon";
+export { default as Card } from "./Card";
 export { default as Icon } from "./Icon";
+export { default as MenuButton } from "./MenuButton";
 export { default as SearchBox } from "./SearchBox";
+export { default as TextArea } from "./TextArea";
 export { default as Typography } from "./Typography";

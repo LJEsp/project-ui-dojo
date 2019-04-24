@@ -2,9 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
-import styled from "styled-components";
-
-const ContentWrapper = styled.div``;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,8 +25,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-
-        <ContentWrapper>{children}</ContentWrapper>
+        {children}
       </>
     )}
   />

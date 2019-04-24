@@ -3,13 +3,7 @@ import styled, { css } from "styled-components";
 
 import spacingProperties from "../../theme/spacingProperties";
 
-const configs = css`
-  ${p =>
-    p.icon &&
-    css`
-      min-width: unset;
-    `}
-`;
+const configs = css``;
 
 const StyledButton = styled.button`
   ${spacingProperties};

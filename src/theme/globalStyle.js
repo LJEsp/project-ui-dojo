@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
 
       --size-button: 3rem;
     }
-  }  
+  }
 
   html {
     scroll-behavior: smooth;
@@ -36,9 +36,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${p => p.theme.font.sansSerif};
     font-size: 16px;
-  }
-
-  #root {
   }
 `;
 

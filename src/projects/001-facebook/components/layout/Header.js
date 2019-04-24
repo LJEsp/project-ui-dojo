@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import { SearchBox, Button, ButtonIcon, Icon, Avatar } from "../elements";
+import { SearchBox, Button, ButtonIcon, Avatar } from "../elements";
+import { InnerWidth } from "../helpers";
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -16,13 +17,7 @@ const StyledHeader = styled.header`
   white-space: nowrap;
 `;
 
-const InnerWidth = styled.div`
-  width: 62%;
-
-  @media (max-width: ${p => p.theme.breakpoint.desktopL}) {
-    width: 100%;
-  }
-
+const StyledInnerWidth = styled(InnerWidth)`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +50,7 @@ const InnerWidth = styled.div`
 const Header = props => {
   return (
     <StyledHeader>
-      <InnerWidth>
+      <StyledInnerWidth>
         <div className="header-left">
           <ButtonIcon icon="fab fa-facebook-square fa-2x" margin="inline-s" />
 
@@ -66,8 +61,11 @@ const Header = props => {
 
         <div className="header-right">
           <Button margin="inline-s">
-            <Avatar margin="inline-s" />
-            John
+            <Avatar
+              margin="inline-s"
+              imageSrc="https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyMzgxMzc5N15BMl5BanBnXkFtZTgwNDg3NzYzMDI@._V1_UY256_CR38,0,172,256_AL_.jpg"
+            />
+            Letitia
           </Button>
 
           <Button margin="inline-s">Home</Button>
@@ -106,7 +104,7 @@ const Header = props => {
             />
           </div>
         </div>
-      </InnerWidth>
+      </StyledInnerWidth>
     </StyledHeader>
   );
 };
