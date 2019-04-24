@@ -38,4 +38,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+// Test comment
+
 export default GlobalStyle;
